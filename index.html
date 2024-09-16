@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nordic Impression's</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/img/favicon_fotogram.png" />
+  </head>
+
+  <body>
+    <!-- Dialog Image -->
+    <div
+      class="dialog-image-container d-none opacity-zero"
+      id="dialogImgContainer"
+    >
+      <div class="dialog-image-wrapper">
+        <img class="dialog-image" id="dialogImage" />
+        <button id="dialogButtonBackward" class="dialog-button-backward">
+          <svg
+                class="dialog-arrow-backwards"
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 12H7M17 12L13 8M17 12L13 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+        </button>
+        <a
+          id="downloadLink"
+          class="download-link"
+          download
+          onclick="event.stopPropagation()"
+        >
+          <img
+            class="download-icon"
+            src="./assets/img/download-svgrepo-com.svg"
+            alt="Download Icon"
+          />
+        </a>
+        <button id="dialogButtonForward" class="dialog-button-forward">
+          <svg
+                class="dialog-arrow-forwards"
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 12H7M17 12L13 8M17 12L13 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+        </button>
+      </div>
+    </div>
+    <!-- HEADER ######################################################################### -->
+    <header>
+      <div class="wrapper align-center">
+        <div class="header-logo-box">
+          <img
+            class="logo-fotogram"
+            src="./assets/img/favicon_fotogram.png"
+            alt=""
+          />
+          <div class="header-title">Nordic Impressions</div>
+        </div>
+        <!-- navbar -->
+        <div class="navbar">
+          <button id="swipeGalleryBtn" class="navbar-button btn-box-shadow">
+            Swipe Gallery
+          </button>
+          <button id="gridViewBtn" class="navbar-button">Grid View</button>
+          <button id="singleViewBtn" class="navbar-button">Single View</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN ############################################################################ -->
+    <main>
+      <div class="wrapper">
+        
+        <!-- swipe gallery section -->
+        <section
+          id="swipeGallerySection"
+          class="swipe-gallery-section z-index-thirty opacity-zero"
+        >
+          <div id="swipeGalleryContainer" class="swipe-gallery-container">
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/1ni.jpg" alt="" accesskey="1"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/2ni.jpg" alt="" accesskey="2"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/3ni.jpg" alt="" accesskey="3"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/4ni.jpg" alt="" accesskey="4"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/5ni.jpg" alt="" accesskey="5"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/6ni.jpg" alt="" accesskey="6"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/7ni.jpg" alt="" accesskey="7"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/8ni.jpg" alt="" accesskey="8"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/9ni.jpg" alt="" accesskey="9"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/10ni.jpg" alt="" accesskey="10"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/11ni.jpg" alt="" accesskey="11"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/12ni.jpg" alt="" accesskey="12"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/13ni.jpg" alt="" accesskey="13"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/14ni.jpg" alt="" accesskey="14"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/15ni.jpg" alt="" accesskey="15"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/16ni.jpg" alt="" accesskey="16"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/17ni.jpg" alt="" accesskey="17"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/18ni.jpg" alt="" accesskey="18"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/19ni.jpg" alt="" accesskey="19"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/20ni.jpg" alt="" accesskey="20"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/21ni.jpg" alt="" accesskey="21"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/22ni.jpg" alt="" accesskey="22"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/23ni.jpg" alt="" accesskey="23"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/24ni.jpg" alt="" accesskey="24"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/25ni.jpg" alt="" accesskey="25"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/26ni.jpg" alt="" accesskey="26"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/27ni.jpg" alt="" accesskey="27"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/28ni.jpg" alt="" accesskey="28"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/29ni.jpg" alt="" accesskey="29"/>
+            </div>
+            <div class="swipe-image-box">
+              <img class="swipe-image" src="./assets/img/30ni.jpg" alt="" accesskey="30"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- grid gallery section -->
+        <section
+          id="gridGallerySection"
+          class="grid-gallery-section z-index-ten opacity-zero"
+        >
+          <div class="grid-gallery-container">
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/1ni.jpg" alt="" accesskey="1"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/2ni.jpg" alt="" accesskey="2"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/3ni.jpg" alt="" accesskey="3"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/4ni.jpg" alt="" accesskey="4"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/5ni.jpg" alt="" accesskey="5"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/6ni.jpg" alt="" accesskey="6"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/7ni.jpg" alt="" accesskey="7"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/8ni.jpg" alt="" accesskey="8"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/9ni.jpg" alt="" accesskey="9"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/10ni.jpg" alt="" accesskey="10"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/11ni.jpg" alt="" accesskey="11"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/12ni.jpg" alt="" accesskey="12"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/13ni.jpg" alt="" accesskey="13"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/14ni.jpg" alt="" accesskey="14"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/15ni.jpg" alt="" accesskey="15"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/16ni.jpg" alt="" accesskey="16"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/17ni.jpg" alt="" accesskey="17"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/18ni.jpg" alt="" accesskey="18"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/19ni.jpg" alt="" accesskey="19"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/20ni.jpg" alt="" accesskey="20"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/21ni.jpg" alt="" accesskey="21"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/22ni.jpg" alt="" accesskey="22"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/23ni.jpg" alt="" accesskey="23"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/24ni.jpg" alt="" accesskey="24"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/25ni.jpg" alt="" accesskey="25"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/26ni.jpg" alt="" accesskey="26"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/27ni.jpg" alt="" accesskey="27"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/28ni.jpg" alt="" accesskey="28"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/29ni.jpg" alt="" accesskey="29"/>
+            </div>
+            <div class="grid-image-box">
+              <img class="grid-image" src="./assets/img/30ni.jpg" alt="" accesskey="30"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- single gallery section -->
+        <section
+          id="singleGallerySection"
+          class="single-gallery-section z-index-twenty opacity-zero"
+        >
+          <img
+            id="singleCurrentImage"
+            class="single-current-image image-transition-eight-sec"
+            src=""
+            alt=""
+          />
+          <div class="single-navbar">
+            <button
+              id="singleImgSkipBtnBackwards"
+              class="single-img-skip-btn border-radius-left"
+            >
+              <svg
+                class="single-arrow-backwards"
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 12H7M17 12L13 8M17 12L13 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="single-img-counter-box">
+              <div id="singleImgCountCurrentNumber" class="single-img-counter">
+                1
+              </div>
+              <div class="single-img-counter">/</div>
+              <div
+                id="singleImgCountImagesLength"
+                class="single-img-counter"
+              ></div>
+            </div>
+            <button
+              id="singleImgSkipBtnForwards"
+              class="single-img-skip-btn border-radius-right"
+            >
+              <svg
+                class="single-arrow-forwards"
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17 12H7M17 12L13 8M17 12L13 16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER ####################################################################### -->
+    <footer>
+      <div class="wrapper footer-container">
+        <img
+          class="footer-logo"
+          src="./assets/img/favicon_fotogram.png"
+          alt=""
+        />
+        <div class="footer-disclaimer">
+          Nordic Impressions - © Richard Streu 2024
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
